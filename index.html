@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarun's Garage - Car Rentals</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    h1 {
+        margin: 20px 0;
+        text-align: center;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    form {
+        margin-bottom: 20px;
+    }
+    input[type="text"], input[type="email"], input[type="tel"] {
+        width: calc(100% - 10px);
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    input[type="submit"] {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    /* Improved color contrast for links */
+    a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Tarun's Garage - Car Rentals</h1>
+    </header>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Model X</td>
+                    <td>$50/day</td>
+                </tr>
+                <tr>
+                    <td>Model Y</td>
+                    <td>$60/day</td>
+                </tr>
+                <tr>
+                    <td>Model Z</td>
+                    <td>$70/day</td>
+                </tr>
+            </tbody>
+        </table>
+        <form id="carRequestForm">
+            <label for="carModel">Car Model:</label>
+            <input type="text" id="carModel" name="carModel" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <input type="submit" value="Submit Request">
+        </form>
+    </div>
+    <footer>
+        <p>Contact us at <a href="tel:1234567890">123-456-7890</a> or <a href="mailto:info@tarunsgarage.com">info@tarunsgarage.com</a><br>
+        Address: 123 Main Street, City, Country</p>
+        <p>&copy; 2024 Tarun's Garage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
